@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>TechBlog</display-name>
+  
+  <servlet>
+	  <servlet-name>Register</servlet-name>
+	  <servlet-class>com.tech.blog.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>Register</servlet-name>
+	  <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>Login</servlet-name>
+	  <servlet-class>com.tech.blog.servlet.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>Login</servlet-name>
+	  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+	  <servlet-name>Logout</servlet-name>
+	  <servlet-class>com.tech.blog.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>Logout</servlet-name>
+	  <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>Edit</servlet-name>
+	  <servlet-class>com.tech.blog.servlet.EditServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>Edit</servlet-name>
+	  <url-pattern>/EditServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+	  <servlet-name>AddPost</servlet-name>
+	  <servlet-class>com.tech.blog.servlet.AddPostServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>AddPost</servlet-name>
+	  <url-pattern>/AddPostServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>LikePost</servlet-name>
+	  <servlet-class>com.tech.blog.servlet.LikeServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>LikePost</servlet-name>
+	  <url-pattern>/LikeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>
